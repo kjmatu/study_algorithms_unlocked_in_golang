@@ -15,7 +15,7 @@ func mergeGoLike(left, right []string) []string {
 			merged = append(merged, right[ri])
 			ri++
 		}
-		fmt.Println("merged", merged)
+		// fmt.Println("merged", merged)
 	}
 
 	// 上のwhile文のどちらかがFalseになった場合終了するため、あまりをextendする
@@ -36,13 +36,13 @@ func mergeSortGoLike(array []string) []string {
 
 	// ここで分割を行う
 	mid := len(array) / 2
-	fmt.Println("mid", mid)
+	// fmt.Println("mid", mid)
 
 	// 再帰的に分割を行う
 	left := array[:mid]
 	right := array[mid:]
-	fmt.Println("left", left)
-	fmt.Println("right", right)
+	// fmt.Println("left", left)
+	// fmt.Println("right", right)
 
 	left = mergeSortGoLike(left)
 	right = mergeSortGoLike(right)
